@@ -1,11 +1,13 @@
 import { Header } from '../components/Header'
-import { BrandSection } from '../components/BrandSection'
+import { Brand } from '../components/Brand'
+import { Characteristics } from '../components/Characteristics'
 
 export function HomePage () {
   return (
-    <div className='px-24'>
+    <>
       <Header />
-      <BrandSection />
-    </div>
+      <Brand />
+      <Characteristics />
+    </>
   )
 }
