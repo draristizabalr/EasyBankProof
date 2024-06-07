@@ -1,12 +1,14 @@
+import { Link } from 'react-router-dom'
+
 export function Header () {
   const navItems = [
     {
       name: 'Home',
-      href: '#'
+      href: '/'
     },
     {
       name: 'About',
-      href: '#'
+      href: '/about'
     },
     {
       name: 'Contact',
@@ -30,7 +32,7 @@ export function Header () {
           {
             navItems.map((item, index) => (
               <li key={index + item.name} className='nav-child active:border-b-2 border-LimeGreen'>
-                <a href={item.href}>{item.name}</a>
+                <Link to={item.href}>{item.name}</Link>
               </li>
             ))
           }

@@ -1,3 +1,5 @@
+import { CardArticle } from '../CardArticle'
+
 export function Articles () {
   const articles = [
     {
@@ -29,37 +31,14 @@ export function Articles () {
       alt: 'confetti'
     }
   ]
+
   return (
     <section className='w-full px-40 py-20 bg-gradient-to-b from-White to-LightGrayishBlue'>
       <h2 className='text-4xl mb-12'>
         Latest Article
       </h2>
       <article className='flex justify-between'>
-        {
-          articles.map((article, index) => (
-            <article
-              key={index + article}
-              className='w-[22em] bg-white'
-            >
-              <img
-                src={article.img}
-                alt={article.alt}
-                className='w-full aspect-[4/3] object-cover'
-              />
-              <div className='h-64 p-6 flex flex-col gap-4'>
-                <h4 className='text-slate-400 text-sm'>
-                  By {article.autor}
-                </h4>
-                <h3 className='text-2xl font-medium'>
-                  {article.title}
-                </h3>
-                <p className='text-md text-slate-400'>
-                  {article.body}
-                </p>
-              </div>
-            </article>
-          ))
-        }
+        <CardArticle articles={articles} />
       </article>
     </section>
   )

@@ -1,4 +1,5 @@
-import { Pills } from './Pills'
+import { Pills } from '../Pills'
+import { FooterMenu } from '../FooterMenu'
 
 export function Footer () {
   const icons = [
@@ -10,12 +11,12 @@ export function Footer () {
   ]
 
   const links = [
-    'About Us',
-    'Careers',
-    'Contact',
-    'Support',
-    'Blog',
-    'Privacy Policy'
+    { title: 'About Us', to: '/about' },
+    { title: 'Careers', to: '/carrers' },
+    { title: 'Contact', to: '/contact' },
+    { title: 'Support', to: '/support' },
+    { title: 'Blog', to: '/blog' },
+    { title: 'Privacy Policy', to: '/privacy-policy' }
   ]
 
   return (
@@ -28,17 +29,7 @@ export function Footer () {
         <Pills pills={icons} />
       </div>
       <div className='py-2 grid grid-rows-3 grid-cols-2 ml-60 gap-x-24'>
-        {
-          links.map((link, index) => (
-            <a
-              key={index + link}
-              href='#'
-              className='text-slate-300 text-sm'
-            >
-              {link}
-            </a>
-          ))
-        }
+        <FooterMenu links={links} />
       </div>
       <div className='ml-auto flex flex-col justify-between items-end '>
         <button className='gradient-button'>
