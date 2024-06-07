@@ -46,7 +46,7 @@ export function Articles () {
                 alt={article.alt}
                 className='w-full aspect-[4/3] object-cover'
               />
-              <div className='p-6 flex flex-col gap-4'>
+              <div className='h-64 p-6 flex flex-col gap-4'>
                 <h4 className='text-slate-400 text-sm'>
                   By {article.autor}
                 </h4>

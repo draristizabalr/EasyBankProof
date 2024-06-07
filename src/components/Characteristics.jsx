@@ -23,7 +23,7 @@ export function Characteristics () {
   ]
 
   return (
-    <section className='py-14 z-10 bg-VeryLightGray px-40'>
+    <section className='py-14 px-40 z-10 bg-gradient-to-b from-VeryLightGray to-LightGrayishBlue'>
       <div className='mt-14 w-1/2 flex flex-col justify-start gap-8'>
         <h1 className='text-4xl'>
           Why choose Easybank?
