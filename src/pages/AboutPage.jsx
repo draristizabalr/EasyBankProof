@@ -1,7 +1,9 @@
+import { BrandImageDesktop } from '../components/Image'
+
 export function AboutPage () {
   return (
-    <div className='text-4xl px-14'>
-      <h1>About Page</h1>
-    </div>
+    <section className='h-[34em] w-full'>
+      <BrandImageDesktop />
+    </section>
   )
 }

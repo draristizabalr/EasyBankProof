@@ -5,11 +5,12 @@
 :root{
   font-family: Public Sans, sans-serif;
   height: 100%;
+  width: 100%;
 }
-
 @layer components {
   body {
     height: 100%;
+    width: 100%;
   }
   .nav .nav-child {
     height: 100%;
