@@ -35,7 +35,7 @@ export function Footer () {
         <button className='gradient-button'>
           Request Invite
         </button>
-        <p className='text-slate-500'>
+        <p className='text-slate-400'>
           © Easybank. All Rights Reserved
         </p>
       </div>

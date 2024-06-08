@@ -15,13 +15,13 @@ export function CardArticle ({ articles }) {
               className='w-full aspect-[4/3] object-cover'
             />
             <div className='h-64 p-6 flex flex-col gap-4'>
-              <h4 className='text-slate-400 text-sm'>
+              <h4 className='text-slate-500 text-sm'>
                 By {article.autor}
               </h4>
               <h3 className='text-2xl font-medium'>
                 {article.title}
               </h3>
-              <p className='text-md text-slate-400'>
+              <p className='text-md text-slate-500'>
                 {article.body}
               </p>
             </div>
