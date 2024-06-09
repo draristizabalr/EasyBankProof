@@ -14,7 +14,7 @@ export function Footer () {
     { title: 'About Us', to: '/about' },
     { title: 'Contact', to: '/contact' },
     { title: 'Blog', to: '/blog' },
-    { title: 'Careers', to: '/carrers' },
+    { title: 'Careers', to: '/careers' },
     { title: 'Support', to: '/support' },
     { title: 'Privacy Policy', to: '/privacy-policy' }
   ]

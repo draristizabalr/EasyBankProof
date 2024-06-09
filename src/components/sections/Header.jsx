@@ -24,15 +24,15 @@ export function Header () {
     },
     {
       name: 'Contact',
-      href: '#'
+      href: '/contact'
     },
     {
       name: 'Blog',
-      href: '#'
+      href: '/blog'
     },
     {
       name: 'Careers',
-      href: '#'
+      href: '/careers'
     }
   ]
 
