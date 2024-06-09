@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![PageScreenshot](./public/screenshots/PageScreenshot.jpg)
+![PageScreenshot](./public/screenshots/Screenshot.jpg)
 
 ### Links
 
