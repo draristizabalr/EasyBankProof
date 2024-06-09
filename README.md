@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![https://drive.google.com/file/d/1GhQl4UsLIOxSdoNVX22vnb_-Xr8LB1Jd/view](./screenshot.jpg)
+![PageScreeshot](https://drive.google.com/file/d/1GhQl4UsLIOxSdoNVX22vnb_-Xr8LB1Jd/view)
 
 ### Links
 
