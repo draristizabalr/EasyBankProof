@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { NavMenu } from '../NavMenu'
 import { MovilMenu } from '../MovilMenu'
+import { useNavigate } from 'react-router-dom'
 
 export function Header () {
   const [menu, setMenu] = useState(false)
@@ -11,6 +12,8 @@ export function Header () {
       document.body.classList.remove('no-scroll')
     }
   }, [menu])
+
+  const navigate = useNavigate()
 
   const icon = menu ? '/icons/icon-close.svg' : '/icons/icon-menu.svg'
   const navItems = [
@@ -43,10 +46,19 @@ export function Header () {
     setMenu(false)
   }
 
+  const clickLogo = () => {
+    const links = document.querySelectorAll('.nav-child')
+    links.forEach(link => {
+      link.classList.remove('active')
+    })
+    links[1].classList.add('active')
+    navigate('/')
+  }
+
   return (
     <>
-      <header className='relative px-8 h-16 z-30 bg-white flex justify-between items-center lg:px-40'>
-        <img src='/images/logo.svg' alt='easybank' />
+      <header className='relative px-8 h-16 z-30 bg-white flex justify-between items-center lg:px-40 hover:cursor-pointer'>
+        <img src='/images/logo.svg' alt='easybank' onClick={clickLogo} />
         <nav className='h-full nav hidden sm:block'>
           <NavMenu navItems={navItems} />
         </nav>
