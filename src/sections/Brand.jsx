@@ -10,7 +10,7 @@ export function Brand () {
           Request Invite
         </button>
       </div>
-      <Image className='relative w-full max-w-[768px] left-0 sm:left-48 top-10 sm:-top-4' />
+      <Image className='relative w-full sm:w-[768px] left-0 sm:left-48 top-10 sm:-top-4' />
     </section>
   )
 }
