@@ -15,7 +15,7 @@ export function Pills ({ pills }) {
           key={index + pill}
           src={icons[pill]}
           alt={`icon ${pill}`}
-          className='w-6 h-6 hover:cursor-pointer'
+          className='w-7 sm:w-6 aspect-square hover:cursor-pointer'
         />
       ))}
     </section>

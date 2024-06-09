@@ -12,26 +12,26 @@ export function Footer () {
 
   const links = [
     { title: 'About Us', to: '/about' },
-    { title: 'Careers', to: '/carrers' },
     { title: 'Contact', to: '/contact' },
-    { title: 'Support', to: '/support' },
     { title: 'Blog', to: '/blog' },
+    { title: 'Careers', to: '/carrers' },
+    { title: 'Support', to: '/support' },
     { title: 'Privacy Policy', to: '/privacy-policy' }
   ]
 
   return (
-    <footer className='w-full h-48 px-40 py-10 bg-DarkBlue flex flex-row justify-start'>
-      <div className='w-40 flex flex-col justify-between items-center'>
+    <footer className='w-full h-fit flex gap-y-5 sm:h-48 py-10 px-0 sm:px-40 sm:py-10 bg-DarkBlue flex-col sm:flex-row justify-start items-center'>
+      <div className='w-1/2 sm:w-40 flex flex-col gap-6 sm:justify-between items-center'>
         <img
           src='/images/logo-white.svg'
           alt='logo EasyBank white'
         />
         <Pills pills={icons} />
       </div>
-      <div className='py-2 grid grid-rows-3 grid-cols-2 ml-60 gap-x-24'>
+      <div className='py-2 grid gap-y-3 sm:grid-flow-col sm:grid-rows-3 grid-cols-1 sm:grid-cols-2 sm:ml-60 gap-x-24'>
         <FooterMenu links={links} />
       </div>
-      <div className='ml-auto flex flex-col justify-between items-end '>
+      <div className='sm:ml-auto flex flex-col gap-6 sm:justify-between items-center sm:items-end '>
         <button className='gradient-button'>
           Request Invite
         </button>

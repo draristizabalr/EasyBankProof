@@ -33,11 +33,11 @@ export function Articles () {
   ]
 
   return (
-    <section className='w-full px-40 py-20 bg-gradient-to-b from-White to-LightGrayishBlue'>
-      <h2 className='text-4xl mb-12'>
+    <section className='w-full px-8 sm:px-40 py-20 bg-gradient-to-b from-white to-LightGrayishBlue'>
+      <h2 className='text-4xl mb-12 text-center sm:text-start'>
         Latest Article
       </h2>
-      <article className='flex justify-between'>
+      <article className='flex flex-col sm:flex-row justify-center gap-8'>
         <CardArticle articles={articles} />
       </article>
     </section>

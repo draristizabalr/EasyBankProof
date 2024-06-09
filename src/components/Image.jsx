@@ -7,7 +7,7 @@ export function Image ({ className }) {
       <img
         src='/images/bg-intro-desktop.svg'
         alt='background desktop image'
-        className='hidden sm:block w-full h-auto'
+        className='hidden sm:block w-full h-auto scale-[1.75]'
       />
       <img
         src='/images/bg-intro-mobile.svg'
@@ -17,7 +17,7 @@ export function Image ({ className }) {
       <img
         src='/images/image-mockups.png'
         alt='mobiles image'
-        className='absolute w-4/5 h-auto left-[10%] -top-4 sm:-top-28 sm:w-full scale-110'
+        className='absolute w-[70%] sm:w-full h-auto transform -translate-x-1/2 sm:-translate-x-0 left-1/2 sm:left-0 top-0 scale-125 overflow-visible'
       />
     </div>
   )

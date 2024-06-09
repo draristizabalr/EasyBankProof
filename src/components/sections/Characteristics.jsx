@@ -1,3 +1,5 @@
+import { CardCharacteristics } from '../CardCharacteristics'
+
 export function Characteristics () {
   const characteristics = [
     {
@@ -23,31 +25,17 @@ export function Characteristics () {
   ]
 
   return (
-    <section className='py-14 px-40 z-10 bg-gradient-to-b from-VeryLightGray to-LightGrayishBlue'>
-      <div className='mt-14 w-1/2 flex flex-col justify-start gap-8'>
-        <h1 className='text-4xl'>
+    <section className='py-14 px-8 sm:px-40  z-10 bg-gradient-to-b from-VeryLightGray to-LightGrayishBlue'>
+      <div className='mt-14 w-full sm:w-1/2 flex flex-col justify-start gap-8'>
+        <h1 className='text-4xl text-center sm:text-start'>
           Why choose Easybank?
         </h1>
-        <p className='text-lg text-slate-400'>
+        <p className='text-lg text-center sm:text-start text-slate-400'>
           We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.
         </p>
       </div>
-      <div className='mt-16 flex flex-row justify-between gap-14'>
-        {
-          characteristics.map((characteristic, index) => (
-            <div key={index + characteristic} className='flex flex-col justify-between items-start gap-8'>
-              <img
-                src={`/images/${characteristic.icon}`}
-                alt={`${characteristic.title} icon`}
-              />
-              <div className='w-full'>
-                <h2 className='text-2xl'>{characteristic.title}</h2>
-                <br />
-                <p className='text-md text-slate-400'>{characteristic.description}</p>
-              </div>
-            </div>
-          ))
-        }
+      <div className='mt-16 flex flex-col h-auto sm:flex-row justify-between gap-14'>
+        <CardCharacteristics characteristics={characteristics} />
       </div>
     </section>
   )
