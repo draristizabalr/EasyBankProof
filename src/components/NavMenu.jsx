@@ -12,15 +12,17 @@ export function NavMenu ({ navItems }) {
 
   return (
     <ul className='nav-child gap-8'>
-      {navItems.map(({ name, href }, index) => (
-        <li
-          key={index + name}
-          className='nav-child'
-          onClick={(e) => activeLink(e)}
-        >
-          <Link to={href}>{name}</Link>
-        </li>
-      ))}
+      {
+        navItems.map(({ name, href }, index) => (
+          <li
+            key={index + name}
+            className='nav-child'
+            onClick={(e) => activeLink(e)}
+          >
+            <Link to={href}>{name}</Link>
+          </li>
+        ))
+      }
     </ul>
   )
 }
