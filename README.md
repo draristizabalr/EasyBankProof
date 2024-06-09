@@ -23,12 +23,12 @@ Users should be able to:
 
 ### Screenshot
 
-![./screenshots/](./screenshot.jpg)
+![https://drive.google.com/file/d/1GhQl4UsLIOxSdoNVX22vnb_-Xr8LB1Jd/view](./screenshot.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/draristizabalr/EasyBankProof)
-- Live Site URL: [Add live site URL here](https://easybankproof.netlify.app/)
+- Solution URL: [https://github.com/draristizabalr/EasyBankProof](https://github.com/draristizabalr/EasyBankProof)
+- Live Site URL: [https://easybankproof.netlify.app/](https://easybankproof.netlify.app/)
 
 ## My process
 
