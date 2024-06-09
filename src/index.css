@@ -32,4 +32,29 @@
   .gradient-button:active {
     transform: scale(0.98);
   }
+  .popup {
+    position: fixed;
+    width: 80%;
+    aspect-ratio: 5/4;
+    top: 5em;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    background: white;
+    border-radius: 0.375em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .backdrop-popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+  }
+  .no-scroll {
+    overflow: hidden;
+    height: 100%;
+  }
 }

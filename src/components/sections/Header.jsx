@@ -1,6 +1,18 @@
-import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { NavMenu } from '../NavMenu'
+import { MovilMenu } from '../MovilMenu'
 
 export function Header () {
+  const [menu, setMenu] = useState(false)
+  useEffect(() => {
+    if (menu) {
+      document.body.classList.add('no-scroll')
+    } else {
+      document.body.classList.remove('no-scroll')
+    }
+  }, [menu])
+
+  const icon = menu ? '/icons/icon-close.svg' : '/icons/icon-menu.svg'
   const navItems = [
     {
       name: 'Home',
@@ -24,36 +36,32 @@ export function Header () {
     }
   ]
 
-  const activeLink = (e) => {
-    const navChild = document.querySelectorAll('.nav-child')
-    navChild.forEach(item => {
-      item.classList.remove('active')
-    })
-    e.currentTarget.classList.add('active')
+  const clickMenu = () => {
+    setMenu(!menu)
+  }
+  const closeMenu = () => {
+    setMenu(false)
   }
 
   return (
-    <header className='relative px-8 h-16 z-30 bg-white flex justify-between items-center lg:px-40'>
-      <img src='/images/logo.svg' alt='easybank' />
-      <nav className='h-full nav hidden sm:block'>
-        <ul className='nav-child gap-8'>
-          {
-            navItems.map((item, index) => (
-              <li key={index + item.name} className='nav-child' onClick={(e) => activeLink(e)}>
-                <Link to={item.href}>{item.name}</Link>
-              </li>
-            ))
-          }
-        </ul>
-      </nav>
-      <button className='gradient-button hidden lg:scale-100 md:block scale-75 px-8 py-2'>
-        Request Invite
-      </button>
-      <img
-        src='/icons/icon-menu.svg'
-        alt='movil menu'
-        className='block h-10 aspect-square sm:hidden'
-      />
-    </header>
+    <>
+      <header className='relative px-8 h-16 z-30 bg-white flex justify-between items-center lg:px-40'>
+        <img src='/images/logo.svg' alt='easybank' />
+        <nav className='h-full nav hidden sm:block'>
+          <NavMenu navItems={navItems} />
+        </nav>
+        <button className='gradient-button hidden lg:scale-100 md:block scale-75 px-8 py-2'>
+          Request Invite
+        </button>
+        <img
+          src={icon}
+          alt='movil menu'
+          className='block h-9 aspect-square active:scale-95 sm:hidden'
+          onClick={clickMenu}
+        />
+
+      </header>
+      {menu && <MovilMenu navItems={navItems} closeMenu={closeMenu} />}
+    </>
   )
 }

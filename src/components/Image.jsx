@@ -17,7 +17,7 @@ export function Image ({ className }) {
       <img
         src='/images/image-mockups.png'
         alt='mobiles image'
-        className='absolute w-[70%] sm:w-full h-auto transform -translate-x-1/2 sm:-translate-x-0 left-1/2 sm:left-0 top-0 scale-125 overflow-visible'
+        className='absolute w-[60%] sm:w-full h-auto transform -translate-x-1/2 sm:-translate-x-0 left-1/2 sm:left-0 top-12 sm:top-0 scale-125 overflow-visible'
       />
     </div>
   )
