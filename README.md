@@ -32,6 +32,15 @@ Users should be able to:
 
 ## My process
 
+1) Read all the instructions and understand my strenghts and weakness
+2) Beggins with the top (Header) and resolve continues the way to end on the bottom page. Starting with desktop page only.
+3) Install and configurate the router.
+4) Create the animations.
+5) Create the responsive part to switch the desktop page to movil page.
+6) Fix the bugs and not well sizing elements.
+7) Deploy the project in Netlify.
+8) Write the process in the README.md file
+
 ### Built with
 
 - Semantic HTML5 markup
