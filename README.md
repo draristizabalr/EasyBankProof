@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![bank-page/public/screenshots](./screenshot.jpg)
+![PageScreenshot](./public/screenshots/PageScreenshot.jpg)
 
 ### Links
 
