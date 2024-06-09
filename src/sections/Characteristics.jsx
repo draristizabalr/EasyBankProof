@@ -1,4 +1,4 @@
-import { CardCharacteristics } from '../CardCharacteristics'
+import { CardCharacteristics } from '../components/CardCharacteristics'
 
 export function Characteristics () {
   const characteristics = [

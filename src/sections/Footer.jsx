@@ -1,5 +1,5 @@
-import { Pills } from '../Pills'
-import { FooterMenu } from '../FooterMenu'
+import { Pills } from '../components/Pills'
+import { FooterMenu } from '../components/FooterMenu'
 
 export function Footer () {
   const icons = [

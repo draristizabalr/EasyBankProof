@@ -1,6 +1,6 @@
-import { Brand } from '../components/sections/Brand'
-import { Characteristics } from '../components/sections/Characteristics'
-import { Articles } from '../components/sections/Articles'
+import { Brand } from '../sections/Brand'
+import { Characteristics } from '../sections/Characteristics'
+import { Articles } from '../sections/Articles'
 
 export function HomePage () {
   return (

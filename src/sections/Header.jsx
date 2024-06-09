@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import { NavMenu } from '../NavMenu'
-import { MovilMenu } from '../MovilMenu'
+import { NavMenu } from '../components/NavMenu'
+import { MovilMenu } from '../components/MovilMenu'
 import { useNavigate } from 'react-router-dom'
 
 export function Header () {

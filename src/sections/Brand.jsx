@@ -1,4 +1,4 @@
-import { Image } from '../Image.jsx'
+import { Image } from '../components/Image'
 
 export function Brand () {
   return (

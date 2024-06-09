@@ -1,4 +1,4 @@
-import { CardArticle } from '../CardArticle'
+import { CardArticle } from '../components/CardArticle'
 
 export function Articles () {
   const articles = [
