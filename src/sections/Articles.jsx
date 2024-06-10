@@ -37,7 +37,7 @@ export function Articles () {
       <h2 className='text-4xl mb-12 text-center sm:text-start'>
         Latest Article
       </h2>
-      <article className='flex flex-col sm:flex-row justify-center gap-8'>
+      <article className='flex flex-col sm:card-container justify-center gap-8'>
         <CardArticle articles={articles} />
       </article>
     </section>

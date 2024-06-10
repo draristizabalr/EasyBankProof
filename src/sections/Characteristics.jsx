@@ -34,7 +34,7 @@ export function Characteristics () {
           We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.
         </p>
       </div>
-      <div className='mt-16 flex flex-col h-auto sm:flex-row justify-between gap-14'>
+      <div className='mt-16 flex flex-col h-auto sm:card-container'>
         <CardCharacteristics characteristics={characteristics} />
       </div>
     </section>
