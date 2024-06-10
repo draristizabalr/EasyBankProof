@@ -48,6 +48,7 @@ export function Header () {
 
   const clickLogo = () => {
     const links = document.querySelectorAll('.nav-child')
+    setMenu(false)
     links.forEach(link => {
       link.classList.remove('active')
     })
